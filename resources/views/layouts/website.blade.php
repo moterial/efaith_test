@@ -24,36 +24,34 @@
     </head>
     
     <header class="bg-white shadow-sm">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="your-logo.png" alt="Your Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="your-social-media-link"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="your-social-media-link"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="your-social-media-link"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="your-login-link">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="your-register-link">Register</a>
-            </li>
-            </ul>
+        <div class="container d-none d-md-block" >
+            <div class="header-row mx-3">
+                <a href="{{ url('/') }}" >
+                    <img src="{{ asset('image/logo.png') }}" alt="logo" class="header-logo" />
+                </a>
+
+                <a href="{{ url('/') }}" >
+                    <img src="{{ asset('image/logo2.png') }}" alt="logo2" class="header-logo"/>
+                </a>
+
+                <div class="header-right float-end">
+                    <div class="social-media">
+                        <a href="{{ url('/') }}" >
+                            <img src="{{ asset('image/header-right-topBar-mail.png') }}" alt="logo2" class="social-logo"/>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        </nav>
-    </div>
+
+        <div class="header-nav d-none d-md-block">
+          
+        </div>
+
     </header>
+      
+      
 
     @yield('content')
 

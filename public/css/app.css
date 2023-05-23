@@ -20,4 +20,28 @@ flex: 1;
 footer {
 flex-shrink: 0;
 }
-  
+
+.header-logo {
+    width: 220px;
+    object-fit: contain;
+}
+
+.header-row{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header-right{
+    
+}
+
+.social-media{
+    background-color: #4154F1;
+}
+
+.social-logo{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
