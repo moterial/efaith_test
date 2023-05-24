@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('website.index');
 });
+
+Route::get('/admin', function () {
+    return view('cms.index');
+});
+
+Route::get('/admin/login', function () {
+    return view('cms.pages-login');
+});
